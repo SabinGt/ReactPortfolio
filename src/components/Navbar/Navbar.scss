@@ -1,0 +1,51 @@
+@import '../../styles/colors';
+ 
+  .dark-theme {
+    $primary: #212121;
+    $secondary: #edf2fc;
+  }
+  
+  body {
+    background-color: $primary;
+  }
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 10%;
+    padding-right: 8%;
+    padding-top: 45px;
+    color: $secondary;
+    height: 10vh;;
+  }
+  
+  .logo {
+    color:$purple;
+    letter-spacing: 1px;
+    cursor: pointer;
+  }
+  
+  nav ul li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 20px;
+  }
+  
+  nav ul li a {
+    color: var(--secondary-color);
+    text-decoration: none;
+    font-weight: bold;
+    
+    padding: 10px;
+    border-radius: 7px;
+  }
+  nav ul li a:hover {
+    color: $primary;
+    background-color:$purple;
+  }
+  #icon{
+      width: 30px;
+      height: 30px;
+      cursor: pointer;
+      object-fit: fill;
+  }

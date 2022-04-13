@@ -1,0 +1,119 @@
+@mixin clamper($lines-to-clamp) {
+  display: -webkit-box;
+  -webkit-line-clamp: $lines-to-clamp;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+section {
+  height: 90vh;
+  position: relative;
+  overflow: hidden;
+}
+.info-wrapper{
+  position:absolute;
+  left: 10%;
+  top:30%;
+  width: 30%;
+  height: 90vh;
+    h1{
+      letter-spacing: 1px;
+      font-weight: 600;
+    }
+    p{
+      @include clamper(3);
+      text-align: justify;
+      margin-top: 25px;
+      margin-bottom: 25px;
+      
+    }
+    a{
+      text-decoration: none;
+      cursor: pointer;
+      padding: 10px;
+      border-radius: 5px;
+      box-shadow: 10px 10px 3px gray;
+    }
+    a:hover{
+      color: white;
+      background-color: black;
+    }
+}
+// .info-wrapper {
+//     position: absolute;
+//     left: 10%;
+//     top: 30%;
+//     width: 30%;
+//     height: 90vh;
+    
+//   }
+// .info-wrapper h1 {
+//     font-weight: bold;
+//     letter-spacing: 1px;
+//     font-size: 2rem;
+  
+//     color: var(--secondary-color);
+//   }
+// .info-wrapper p {
+//     @include clamper(3);
+//     padding-top: 25px;
+//     text-align: justify;
+//     font-family: sans-serif;
+//     color: var(--secondary-color);
+    
+//   }
+
+  
+.image-wrapper {
+    position: absolute;
+    background-image: url("../assets/images/sabin.png");
+    height: 92vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    top: 10%;
+    background-position: 65%;
+}
+  
+.right-circle {
+    background-color: #7562d7;
+    height: 80vw;
+    width: 80vw;
+    position: absolute;
+    margin-left: 55%;
+    border-radius: 100%;
+    bottom: -100%;
+    top: 25%;
+  }
+  
+.left-circle {
+    background-color: whitesmoke;
+    height: 20vw;
+    width: 20vw;
+    position: absolute;
+    border-radius: 100%;
+    left: -15%;
+  }
+.right-icon {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    height: 120px;
+    bottom: 14%;
+    right: 12%;
+    position: absolute;
+  }
+.right-icon div {
+    height: 20px;
+    width: 20px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+  }
+  .icon1 {
+    background-image: url("../assets/images/insta.png");
+  }
+  .icon2 {
+    background-image: url("../assets/images/dribble.png");
+  }
+  .icon3 {
+    background-image: url("../assets/images/behance.png");
+  }
