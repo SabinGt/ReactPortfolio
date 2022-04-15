@@ -38,34 +38,9 @@ section {
       background-color: black;
     }
 }
-// .info-wrapper {
-//     position: absolute;
-//     left: 10%;
-//     top: 30%;
-//     width: 30%;
-//     height: 90vh;
-    
-//   }
-// .info-wrapper h1 {
-//     font-weight: bold;
-//     letter-spacing: 1px;
-//     font-size: 2rem;
-  
-//     color: var(--secondary-color);
-//   }
-// .info-wrapper p {
-//     @include clamper(3);
-//     padding-top: 25px;
-//     text-align: justify;
-//     font-family: sans-serif;
-//     color: var(--secondary-color);
-    
-//   }
-
-  
 .image-wrapper {
     position: absolute;
-    background-image: url("../assets/images/sabin.png");
+    background-image: url("../../assets/sabin.png");
     height: 92vh;
     width: 100%;
     background-repeat: no-repeat;
@@ -109,11 +84,18 @@ section {
     background-position: center;
   }
   .icon1 {
-    background-image: url("../assets/images/insta.png");
+    background-image: url("../../assets/insta.png");
   }
   .icon2 {
-    background-image: url("../assets/images/dribble.png");
+    background-image: url("../../assets/dribble.png");
   }
   .icon3 {
-    background-image: url("../assets/images/behance.png");
+    background-image: url("../../assets/behance.png");
+  }
+  @media screen and (max-width:390px){
+     .content{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+      }
+    
   }

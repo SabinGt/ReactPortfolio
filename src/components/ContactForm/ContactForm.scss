@@ -11,6 +11,7 @@
     letter-spacing: 1px;
     text-align: center;
     height: 10vh;
+    font-size: 1rem;
   }
   .content p{
     color: var(--secondary-color);
@@ -50,8 +51,7 @@
   font-weight: 300;
   color: var(--secondary-color );
   padding: 10px;
-  
-      
+ 
   }
   .container .contactinfo .box .text h3{
     font-weight: 500;
@@ -62,6 +62,10 @@
     position: absolute;
     padding: 10px;
     
+    
+  }
+  .text{
+    margin-left: 10px;
   }
   .contact-form{
     display: flex;
@@ -93,25 +97,10 @@
     border-bottom: 2px solid var(--secondary-color);
     resize: none;
     background-color: var(--primary-color);
+    
   }
-  .inputbox span{
-    position: absolute;
-    left: 0;
-    padding: 5px 0;
-    margin: 10px 0;
-    font-size: 16px;
-    pointer-events: none;
-    transition: 0.5s;
-    color: #666;
-  }
-  .inputbox input:focus ~ span,
-  .inputbox input:valid ~ span,
-  .inputbox textarea:focus ~ span
-  {
-    color: #e91e63;
-    font-size: 14px;
-    transform: translateY(-12px);
-  }
+  
+  
   .contact-form .inputbox input[type=submit]{
     width: 100px;
     background-color: #7562d7;
@@ -126,13 +115,16 @@
     color: #7562d7;
     background-color: var(--secondary-color);
   }
-  @media only screen and (min-width:360px){
-    // #image-wrapper{
-    //   display: block;
-    // }
-  }
   .text a{
     text-decoration: none;
     color: var(--secondary-color);
   }
-  
+  @media screen and (max-width:390px){
+
+    .container{
+      display: grid;
+      grid-template-columns: repeat(1,1fr);
+      box-shadow: none;
+    }
+    
+  }

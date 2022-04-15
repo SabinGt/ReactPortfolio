@@ -1,7 +1,7 @@
 import React,{useState,useEffect} from 'react'
 import Axios from 'axios'
 import './Project.scss'
-import person from '../assets/images/person.png'
+import person from '../../assets/person.png'
 
 
 function Project() {

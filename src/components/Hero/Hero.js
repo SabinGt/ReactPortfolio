@@ -1,6 +1,6 @@
 import React from 'react'
 import './Hero.scss'
-import resume from '../assets/images/Resume.pdf'
+import resume from '../../assets/Resume.pdf'
 
 function Hero() {
   return (

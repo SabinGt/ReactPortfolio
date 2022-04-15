@@ -1,6 +1,6 @@
 import React from 'react'
 import './Navbar.scss'
-import logo from '../assets/images/moon.png'
+import logo from '../../assets/moon.png'
 import {Link} from 'react-router-dom'
 
 function Navbar() {
