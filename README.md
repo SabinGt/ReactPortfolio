@@ -24,6 +24,6 @@ You may also see any lint errors in the console.
 
 * Introduction 
 * Wroks(Pojects fetched from github API)
-* Conact from
+* Conact form
 
 # ReactPortfolio
